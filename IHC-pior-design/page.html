@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>shitty-page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="operation.js"></script>
+        <script src="remap.js" defer></script>
+    </head>
+        <body class="page1">
+            <form id = "formCadastro">
+                <div class="form">
+                    <h5>faça teu login</h5>
+                    <label for ="username"><h2>nome de usuário</h2></label>
+                    <input type="text" id="username">
+                    <label for="senha">senha</label>
+                    <input type="text" id="senha">
+                    <div class="confirm">
+                        <label for="confirmarSenha"><h5>digite a senha novamente</h5></label>
+                        <input type="password" id="confirmarSenha">
+                        <button type="button" id="btnVerSenha" style="display: none;">ver senha</button>
+                        <div id="contadorTentativas">tentativas para ver a senha: 3</div>
+                    </div>
+                    <button type="submit" class="login">login</button>
+                    </div>
+            </form>
+
+            <div class="regras-login">
+                <ul>
+                    <li>o nome de usuário deve conter no mínimo 10 caracteres</li>
+                    <li>deve conter no mínimo 8 caracteres</li>
+                    <li>deve conter no mínimo 2 letras maiúscula</li>
+                    <li>deve conter no mínimo 2 letras minúscula</li>
+                    <li>deve conter no mínimo 2 números</li>
+                    <li>deve conter no mínimo 2 caracteres especiais (!@#$%^&*)</li>
+                </ul>
+            </div>
+
+            <div id="modalVideo" class="modalVideo">
+                <video id="hamood">
+                    <source src = "mídias/hamood habibi at 60 fps and with improved video quality (1).mp4" 
+                    type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="statusVideo" class="status-video"></div>
+            </div>
+        </body>
+</html>
